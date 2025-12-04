@@ -44,8 +44,7 @@ Project/
 ## 5. 팀원 구성 및 역할 (역할분담)
 
 - **박준하 (팀장)**  
-  - 원격저장소(GitHub Repository) 관리  
-  - 맛집·카페 조사  
+  - 원격저장소(GitHub Repository) 관리   
   - 프로젝트 기본 구조 설계  
   - 문서(README) 작성  
   - 작업 분배 및 일정 조율  
