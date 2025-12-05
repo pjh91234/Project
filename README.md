@@ -65,10 +65,10 @@ Project/
 
 ## 6. 실행 방법
 
-### ✔ GitHub Pages에서 실행 
+###  GitHub Pages에서 실행 
 https://pjh91234.github.io/Project/
 
-### ✔ 로컬에서 실행 (선택)
+###  로컬에서 실행 (선택)
 ```bash
 git clone https://github.com/pjh91234/Project.git
 cd Project
