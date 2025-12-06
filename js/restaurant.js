@@ -6,6 +6,14 @@ const restaurants = [
   { id:4, name:"대홍 훠궈 샤브샤브", category:"중식", rating:5.0, reviews:4, desc:"샤브샤브 무한리필", img:"../images/대홍 훠궈 샤브샤브.jpg" },
   { id:5, name:"미쳐버린파닭", category:"치킨", rating:4.3, reviews:16, desc:"다양한 메뉴, 푸짐한 양", img:"../images/미쳐버린파닭.webp" },
   { id:6, name:"앤의 식탁", category:"유러피안", rating:4.3, reviews:48, desc:"유럽 가정식 맛집", img:"../images/앤의 식탁.jpg" }
+  { id:7, name:"일미닭갈비파전", category:"닭갈비", rating:4.5, reviews:90, desc:"우동사리+볶음밥 강추", img:"../images/일미닭갈비파전.webp" },
+  { id:8, name:"카바레 식당", category:"일식", rating:4.0, reviews:226, desc:"카레 중심, 덮밥도 인기", img:"../images/카바레 식당.webp" },
+  { id:9, name:"한그릇", category:"일식", rating:4.3, reviews:33, desc:"다양한 해산물 덮밥", img:"../images/한그릇.webp" },
+  { id:10, name:"에비수", category:"일식", rating:4.1, reviews:323, desc:"맛있는 초밥", img:"../images/에비수.webp" },
+  { id:11, name:"남월", category:"베트남 요리", rating:4.2, reviews:481, desc:"분위기 좋은 쌀국수 맛집", img:"../images/남월.webp" },
+  { id:12, name:"젤리 팩토리", category:"족발", rating:4.2, reviews:34, desc:"밑반찬이 푸짐한 족발집", img:"../images/젤리 팩토리.webp" },
+  { id:13, name:"밀플랜비", category:"부리또", rating:4.4, reviews:296, desc:"포장이 간편한 부리또 세트", img:"../images/밀플랜비.webp" },
+  { id:14, name:"코운즈", category:"일식", rating:4.5, reviews:2, desc:"생면이 일품인 라멘/돈카츠 맛집", img:"../images/코운즈.webp" }
 ];
 
 const listEl = document.getElementById('list');
@@ -82,5 +90,6 @@ function toggleFav(id){
   if(favs.includes(id)) favs = favs.filter(x=>x!==id); else favs.push(id);
   localStorage.setItem('favs', JSON.stringify(favs));
 }
+
 
 init();
