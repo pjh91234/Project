@@ -5,7 +5,7 @@ const restaurants = [
   { id:3, name:"자이카", category:"인도 요리", rating:4.1, reviews:7, desc:"이색적인 인도 전통음식", img:"../images/자이카.jpg" },
   { id:4, name:"대홍 훠궈 샤브샤브", category:"중식", rating:5.0, reviews:4, desc:"샤브샤브 무한리필", img:"../images/대홍 훠궈 샤브샤브.jpg" },
   { id:5, name:"미쳐버린파닭", category:"치킨", rating:4.3, reviews:16, desc:"다양한 메뉴, 푸짐한 양", img:"../images/미쳐버린파닭.webp" },
-  { id:6, name:"앤의 식탁", category:"유러피안", rating:4.3, reviews:48, desc:"유럽 가정식 맛집", img:"../images/앤의 식탁.jpg" }
+  { id:6, name:"앤의 식탁", category:"유러피안", rating:4.3, reviews:48, desc:"유럽 가정식 맛집", img:"../images/앤의 식탁.jpg" },
   { id:7, name:"일미닭갈비파전", category:"닭갈비", rating:4.5, reviews:90, desc:"우동사리+볶음밥 강추", img:"../images/일미닭갈비파전.webp" },
   { id:8, name:"카바레 식당", category:"일식", rating:4.0, reviews:226, desc:"카레 중심, 덮밥도 인기", img:"../images/카바레 식당.webp" },
   { id:9, name:"한그릇", category:"일식", rating:4.3, reviews:33, desc:"다양한 해산물 덮밥", img:"../images/한그릇.webp" },
@@ -93,3 +93,4 @@ function toggleFav(id){
 
 
 init();
+
