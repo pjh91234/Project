@@ -29,3 +29,30 @@ footer {
     text-align: center;
     margin-top: 40px;
 }
+.cafe-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cafe-list li {
+    margin: 8px 0;
+}
+
+.cafe-list a {
+    color: #4a6cf7;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.cafe-detail {
+    max-width: 600px;
+    margin: 25px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.cafe-detail h3 {
+    margin-top: 0;
+}
