@@ -65,14 +65,148 @@ Project/
 
 ## 6. 실행 방법
 
-### ✔ GitHub Pages에서 실행
-👉 **배포된 웹사이트 링크:**  
+###  GitHub Pages에서 실행 
 https://pjh91234.github.io/Project/
 
-### ✔ 로컬에서 실행 (선택)
+###  로컬에서 실행 (선택)
 ```bash
 git clone https://github.com/pjh91234/Project.git
 cd Project
 
        ├── cafe.html          # 카페 추천 페이지
        └── restaurant.html    # 맛집 추천 페이지
+
+## 임성주 디자인 파트
+link rel="stylesheet" href="style.css"
+
+/*전반적인 페이지 스타일 */
+body {
+    font-family: 'Noto Sans KR', sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #343a40; 
+    line-height: 1.6; 
+    -webkit-font-smoothing: antialiased; 
+    text-rendering: optimizeLegibility; 
+
+/*  메인 콘텐츠 영역 컨테이너 */
+.container {
+    max-width: 960px; 
+    margin: 40px auto;
+    padding: 20px 30px; 
+    background-color: #ffffff;
+    border-radius: 12px; 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* 제목 */
+header {
+    text-align: center; 
+    margin-bottom: 40px; 
+    padding-bottom: 25px; 
+    border-bottom: 1px solid #e9ecef; 
+
+h1 {
+    color: #2c589b;
+    font-size: 2.8em; 
+    margin-bottom: 15px; 
+    letter-spacing: -0.03em; 
+}
+
+p.description {
+    font-size: 1.15em; 
+    color: #6c757d; 
+    margin-top: 0;
+    line-height: 1.5;
+}
+
+/*  각 카페/맛집 정보 스타일 */
+.item-card {
+    background-color: #ffffff; 
+    border: 1px solid #e0e0e0; 
+    border-radius: 10px; 
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease; 
+    display: flex; 
+    flex-direction: column;
+}
+
+.item-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12); 
+}
+
+/* 각 항목의 제목 */
+.item-card h2 {
+    color: #333;
+    font-size: 1.6em;
+    margin-top: 0;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #e9ecef;
+    padding-bottom: 8px;
+    word-break: keep-all; 
+}
+
+/* 설명 텍스트 */
+.item-card p {
+    font-size: 0.95em;
+    color: #555;
+    margin-bottom: 8px;
+    flex-grow: 1; 
+}
+
+/* 추가 정보 (예: 가격대, 특징) */
+.item-card .info-tag {
+    display: inline-block; 
+    background-color: #e3f2fd; 
+    color: #2196f3; 
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.85em;
+    margin-right: 8px;
+    margin-top: 5px;
+    white-space: nowrap; 
+}
+
+
+/* 홈으로 돌아가는 버튼 */
+.back-to-home {
+    display: inline-block; 
+    margin-top: 30px;
+    padding: 12px 25px;
+    background-color: #6c757d;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    font-weight: bold;
+    font-size: 1.05em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.back-to-home:hover {
+    background-color: #5a6268; 
+    transform: translateY(-2px);
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2.2em;
+    }
+
+    .item-list {
+        grid-template-columns: 1fr; 
+    }
+}
