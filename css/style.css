@@ -29,3 +29,29 @@ footer {
     text-align: center;
     margin-top: 40px;
 }
+
+/* ========== restaurant 전용 스타일 (충돌 주의) ========== */
+.restaurant-container{max-width:1100px;margin:0 auto;padding:20px;text-align:left}
+.restaurant-container h2{text-align:center;margin-bottom:12px;color:#333}
+
+.restaurant-controls{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap;justify-content:center}
+.restaurant-search, .restaurant-select{
+  padding:8px;border:1px solid #ddd;border-radius:6px;font-size:14px;
+}
+.restaurant-select{min-width:140px}
+
+/* 카드 그리드 */
+.restaurant-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+.restaurant-card{background:#fff;border-radius:8px;padding:12px;display:flex;gap:12px;align-items:flex-start;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
+.restaurant-card img{width:120px;height:80px;object-fit:cover;border-radius:8px}
+.restaurant-card .meta{flex:1}
+.restaurant-badge{display:inline-block;padding:4px 8px;border-radius:999px;background:#f0f4ff;color:#1b4fd6;font-size:12px;margin-left:6px}
+.restaurant-actions{display:flex;flex-direction:column;gap:8px;align-items:flex-end}
+.restaurant-btn{background:#ff6b6b;color:#fff;padding:8px;border:none;border-radius:8px;cursor:pointer}
+.restaurant-fav{background:transparent;border:1px solid #eee;padding:6px;border-radius:6px;cursor:pointer;font-size:14px}
+
+/* 반응형 */
+@media (max-width:900px){
+  .restaurant-controls{justify-content:stretch}
+  .restaurant-actions{align-items:flex-start}
+}
