@@ -55,3 +55,34 @@ footer {
   .restaurant-controls{justify-content:stretch}
   .restaurant-actions{align-items:flex-start}
 }
+
+/* ========== restaurant 전용 레이아웃(추가) ========== */
+.restaurant-layout { display:flex; gap:16px; align-items:flex-start; padding:16px; box-sizing:border-box; }
+.restaurant-list-panel { flex:1; min-width:300px; }
+.restaurant-map-panel { width:420px; max-width:45vw; }
+
+#map { width:100%; height:600px; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.06); }
+
+.restaurant-container{max-width:100%; padding:0}
+.restaurant-controls{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap;align-items:center}
+.restaurant-search, .restaurant-select{padding:8px;border:1px solid #ddd;border-radius:6px;font-size:14px}
+
+/* 카드 리스트 (수직 스택 기본) */
+.restaurant-list{display:flex;flex-direction:column;gap:12px}
+.restaurant-card{display:flex;gap:12px;align-items:center;background:#fff;padding:12px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.04)}
+.restaurant-card img{width:140px;height:100px;object-fit:cover;border-radius:8px;flex:0 0 140px}
+.restaurant-card .meta{flex:1}
+.restaurant-badge{display:inline-block;padding:4px 8px;border-radius:999px;background:#f0f4ff;color:#1b4fd6;font-size:12px;margin-left:6px}
+.restaurant-actions{display:flex;flex-direction:column;gap:8px;align-items:flex-end}
+.restaurant-btn{background:#ff6b6b;color:#fff;padding:8px;border:none;border-radius:8px;cursor:pointer}
+.restaurant-fav{background:transparent;border:1px solid #eee;padding:6px;border-radius:6px;cursor:pointer}
+
+/* 반응형 */
+@media (max-width:900px){
+  .restaurant-layout{flex-direction:column}
+  .restaurant-map-panel{width:100%}
+  #map{height:400px}
+  .restaurant-card{flex-direction:column;align-items:stretch}
+  .restaurant-card img{width:100%;height:180px;flex:none}
+  .restaurant-actions{flex-direction:row;justify-content:space-between}
+}
