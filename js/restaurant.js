@@ -307,4 +307,3 @@ function attachFavoriteControls(){
 
 // 기존 attachEvents() 끝이나 init()에서 attachFavoriteControls() 호출해줘
 // 예: function init(){ ... attachEvents(); attachFavoriteControls(); ... }
-
