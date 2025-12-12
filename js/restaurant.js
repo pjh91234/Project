@@ -7,13 +7,12 @@ const restaurants = [
   { id:5, name:"미쳐버린파닭", category:["치킨"], rating:4.3, reviews:16, desc:"다양한 메뉴, 푸짐한 양", img:"../images/미쳐버린파닭.webp", lat:37.299862, lng:126.838422 },
   { id:6, name:"앤의 식탁", category:["유러피안"], rating:4.3, reviews:48, desc:"유럽 가정식 맛집", img:"../images/앤의 식탁.jpg", lat:37.301106, lng:126.838682 },
   { id:7, name:"일미닭갈비파전", category:["닭갈비"], rating:4.5, reviews:90, desc:"우동사리+볶음밥 강추", img:"../images/일미닭갈비파전.webp", lat:37.299490, lng:126.838412 },
-  { id:8, name:"카바레 식당", category:["일식"], rating:4.0, reviews:226, desc:"카레 중심, 덮밥도 인기", img:"../images/카바레 식당.webp", lat:37.301082, lng:126.837393 },
-  { id:9, name:"한그릇", category:["일식"], rating:4.3, reviews:33, desc:"다양한 해산물 덮밥", img:"../images/한그릇.webp", lat:37.300086, lng:126.839320 },
-  { id:10, name:"에비수", category:["일식"], rating:4.1, reviews:323, desc:"맛있는 초밥", img:"../images/에비수.webp", lat:37.301435, lng:126.839541 },
-  { id:11, name:"남월", category:["베트남 요리"], rating:4.2, reviews:481, desc:"분위기 좋은 쌀국수 맛집", img:"../images/남월.webp", lat:37.301380, lng:126.838333 },
-  { id:12, name:"젤리 팩토리", category:["족발"], rating:4.2, reviews:34, desc:"밑반찬이 푸짐한 족발집", img:"../images/젤리 팩토리.webp", lat:37.300250, lng:126.839763 },
-  { id:13, name:"밀플랜비", category:["부리또"], rating:4.4, reviews:296, desc:"포장이 간편한 부리또 세트", img:"../images/밀플랜비.webp", lat:37.300224, lng:126.839283 },
-  { id:14, name:"코운즈", category:["일식"], rating:4.5, reviews:2, desc:"생면이 일품인 라멘/돈카츠 맛집", img:"../images/코운즈.webp", lat:37.301889, lng:126.838621 }
+  { id:8, name:"한그릇", category:["일식"], rating:4.3, reviews:33, desc:"다양한 해산물 덮밥", img:"../images/한그릇.webp", lat:37.300086, lng:126.839320 },
+  { id:9, name:"에비수", category:["일식"], rating:4.1, reviews:323, desc:"맛있는 초밥", img:"../images/에비수.webp", lat:37.301435, lng:126.839541 },
+  { id:10, name:"남월", category:["베트남 요리"], rating:4.2, reviews:481, desc:"분위기 좋은 쌀국수 맛집", img:"../images/남월.webp", lat:37.301380, lng:126.838333 },
+  { id:11, name:"젤리 팩토리", category:["족발"], rating:4.2, reviews:34, desc:"밑반찬이 푸짐한 족발집", img:"../images/젤리 팩토리.webp", lat:37.300250, lng:126.839763 },
+  { id:12, name:"밀플랜비", category:["부리또"], rating:4.4, reviews:296, desc:"포장이 간편한 부리또 세트", img:"../images/밀플랜비.webp", lat:37.300224, lng:126.839283 },
+  { id:13, name:"코운즈", category:["일식"], rating:4.5, reviews:2, desc:"생면이 일품인 라멘/돈카츠 맛집", img:"../images/코운즈.webp", lat:37.301889, lng:126.838621 }
 ];
 
 // DOM 요소
@@ -308,3 +307,4 @@ function attachFavoriteControls(){
 
 // 기존 attachEvents() 끝이나 init()에서 attachFavoriteControls() 호출해줘
 // 예: function init(){ ... attachEvents(); attachFavoriteControls(); ... }
+
